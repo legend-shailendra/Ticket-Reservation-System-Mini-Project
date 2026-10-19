@@ -2,6 +2,9 @@
 bin/
 *.class
 
+# Database credentials (keep local secrets safe)
+db.properties
+
 # IDE and Editor Metadata
 .idea/
 .vscode/

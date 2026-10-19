@@ -30,11 +30,12 @@ Ticket Reservation System Mini-Project/
 │   │   └── TableFormatter.java               # ASCII Border Table & ResultSet Formatter
 │   └── TicketReservationApp.java             # Main CLI Interactive Console Application
 │
-├── bin/                                      # Compiled Java .class bytecode
-├── db.properties                             # MySQL Database connection configuration
+├── bin/                                      # Compiled Java .class bytecode (git-ignored)
+├── db.properties.example                     # MySQL Database configuration template
 ├── schema_mysql.sql                          # MySQL Database DDL & Seed Script
 ├── compile.bat                               # Windows 1-click Compilation script
 ├── run.bat                                   # Windows 1-click Execution script
+├── .gitignore                                # Git ignore file
 └── README.md                                 # Lab Documentation & Viva Guide
 ```
 
@@ -138,12 +139,12 @@ System.out.println("Driver:  " + meta.getDriverName());
    source c:/Users/shail/OneDrive/Documents/DBMS/Practical 10/schema_mysql.sql;
    ```
    *(This creates the `ticket_reservation_db` database and populates sample routes/trains).*
-3. Open [db.properties](file:///c:/Users/shail/OneDrive/Documents/DBMS/Practical%2010/db.properties) and update your MySQL username and password:
+3. Copy `db.properties.example` to `db.properties` (or edit [db.properties](file:///c:/Users/shail/OneDrive/Documents/DBMS/Practical%2010/db.properties)) with your MySQL username and password:
    ```properties
    db.driver=com.mysql.cj.jdbc.Driver
    db.url=jdbc:mysql://localhost:3306/ticket_reservation_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
    db.user=root
-   db.password=Shailendra@5736
+   db.password=your_password_here
    ```
 
 ---

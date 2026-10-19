@@ -1,9 +1,9 @@
 # ===============================================================
-# MySQL Database Configuration for Ticket Reservation System
-# Ticket Reservation System Mini-Project: JDBC Connectivity
+# MySQL Database Configuration Template
+# Copy this file to 'db.properties' and set your MySQL password
 # ===============================================================
 
 db.driver=com.mysql.cj.jdbc.Driver
 db.url=jdbc:mysql://localhost:3306/ticket_reservation_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
 db.user=root
-db.password=root
+db.password=your_mysql_password_here
